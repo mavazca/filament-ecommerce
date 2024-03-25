@@ -198,7 +198,7 @@ class OrderResource extends Resource
                 TextColumn::make('grand_total')
                     ->numeric()
                     ->sortable()
-                    ->money('currency'),
+                    ->money('BRL'), //TODO: esse valor fixo BRL deve ser dinâmico do campo currency
 
                 TextColumn::make('payment_method')
                     ->searchable()
