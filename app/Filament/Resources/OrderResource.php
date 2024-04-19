@@ -177,7 +177,7 @@ class OrderResource extends Resource
 
                                 $set('grand_total', $total);
 
-                                return Number::currency($total, $get('currency'));
+                                return Number::currency($total, $get('currency'), 'pt_BR');
                             }),
 
                         Hidden::make('grand_total')
