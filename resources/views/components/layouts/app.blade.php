@@ -6,6 +6,7 @@
 
         <title>{{ $title ?? 'E-commerce' }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
         @livewireStyles
     </head>
 
@@ -17,5 +18,8 @@
         @livewire('partials.footer')
 
         @livewireScripts
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <x-livewire-alert::scripts />
     </body>
 </html>
